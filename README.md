@@ -171,8 +171,8 @@ Python 3.8 or higher
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/rohanmistry231/ML-Algorithms-from-Scratch.git
-cd ML-Algorithms-from-Scratch
+git clone https://github.com/rohanmistry231/Machine-Learning-Algorithms-From-Scratch.git
+cd Machine-Learning-Algorithms-From-Scratch
 ```
 
 2. Install dependencies:
