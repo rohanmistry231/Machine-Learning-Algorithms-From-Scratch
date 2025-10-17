@@ -72,100 +72,87 @@ This repository contains **pure Python implementations** of popular machine lear
 
 ## 🗂️ Repository Structure
 
-```
-ml-algorithms-from-scratch/
-│
-├── algorithms/
-│   ├── supervised/
-│   │   ├── regression/
-│   │   │   ├── linear_regression.py     
-│   │   │   ├── ridge_regression.py      
-│   │   │   ├── lasso_regression.py      
-│   │   │   ├── polynomial_regression.py 
-│   │   │   └── logistic_regression.py   
-│   │   ├── classification/
-│   │   │   ├── knn.py               
-│   │   │   ├── naive_bayes.py       
-│   │   │   ├── decision_tree.py     
-│   │   │   ├── svm.py               
-│   │   │   ├── random_forest.py     
-│   │   │   └── gradient_boosting.py 
-│   │   └── neural_networks/
-│   │       ├── perceptron.py                 
-│   │       ├── mlp.py                        
-│   │       └── backpropagation.py            
-│   │
-│   ├── unsupervised/
-│   │   ├── clustering/
-│   │   │   ├── kmeans.py                     
-│   │   │   ├── dbscan.py                     
-│   │   │   ├── hierarchical.py               
-│   │   │   └── gmm.py                        
-│   │   └── dimensionality_reduction/
-│   │       ├── pca.py                        
-│   │       ├── lda.py                        
-│   │       └── tsne.py                       
-│   │
-│   ├── ensemble/
-│   │   ├── random_forest.py                  
-│   │   ├── adaboost.py                       
-│   │   ├── gradient_boosting.py              
-│   │   └── bagging.py                        
-│   │   └── stacking.py                       
-│   │
-│   └── utils/
-│       ├── metrics.py                        
-│       ├── preprocessing.py                  
-│       ├── visualization.py                  
-│       └── optimizers.py                     
-│
-├── notebooks/
-│   ├── 01_linear_regression_tutorial.ipynb
-│   ├── 02_logistic_regression_tutorial.ipynb
-│   ├── 03_knn_tutorial.ipynb
-│   ├── 04_naive_bayes_tutorial.ipynb
-│   ├── 05_decision_tree_tutorial.ipynb
-│   ├── 06_svm_tutorial.ipynb
-│   ├── 07_neural_networks_tutorial.ipynb
-│   ├── 08_kmeans_tutorial.ipynb
-│   ├── 09_pca_tutorial.ipynb
-│   └── ...
-│
-├── tests/
-│   ├── test_linear_regression.py
-│   ├── test_logistic_regression.py
-|   ├── test_ridge_regression.py
-│   ├── test_polynomial_regression.py
-│   ├── test_knn.py
-│   ├── test_decision_tree.py
-│   ├── test_kmeans.py
-│   ├── test_pca.py
-│   └── ...
-│
-├── examples/
-│   ├── regression_example.py
-│   ├── classification_example.py
-│   ├── clustering_example.py
-│   └── neural_network_example.py
-│
-├── docs/
-│   ├── mathematical_foundations.md
-│   ├── algorithm_comparison.md
-│   ├── contributing.md
-│   └── api_reference.md
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
+ml-algorithms-from-scratch/  
+├── [src/](src/)  
+│   ├── [supervised/](src/supervised/)  
+│   │   ├── [regression/](src/supervised/regression/)  
+│   │   │   ├── [linear_regression.py](src/supervised/regression/linear_regression.py)  
+│   │   │   ├── [ridge_regression.py](src/supervised/regression/ridge_regression.py)  
+│   │   │   ├── [lasso_regression.py](src/supervised/regression/lasso_regression.py)  
+│   │   │   ├── [polynomial_regression.py](src/supervised/regression/polynomial_regression.py)  
+│   │   │   └── [logistic_regression.py](src/supervised/regression/logistic_regression.py)  
+│   │   ├── [classification/](src/supervised/classification/)  
+│   │   │   ├── [knn.py](src/supervised/classification/knn.py)  
+│   │   │   ├── [naive_bayes.py](src/supervised/classification/naive_bayes.py)  
+│   │   │   ├── [decision_tree.py](src/supervised/classification/decision_tree.py)  
+│   │   │   ├── [svm.py](src/supervised/classification/svm.py)  
+│   │   │   ├── [random_forest.py](src/supervised/classification/random_forest.py)  
+│   │   │   └── [gradient_boosting.py](src/supervised/classification/gradient_boosting.py)  
+│   │   └── [neural_networks/](src/supervised/neural_networks/)  
+│   │       ├── [perceptron.py](src/supervised/neural_networks/perceptron.py)  
+│   │       ├── [mlp.py](src/supervised/neural_networks/mlp.py)  
+│   │       └── [backpropagation.py](src/supervised/neural_networks/backpropagation.py)  
+│   ├── [unsupervised/](src/unsupervised/)  
+│   │   ├── [clustering/](src/unsupervised/clustering/)  
+│   │   │   ├── [kmeans.py](src/unsupervised/clustering/kmeans.py)  
+│   │   │   ├── [dbscan.py](src/unsupervised/clustering/dbscan.py)  
+│   │   │   ├── [hierarchical.py](src/unsupervised/clustering/hierarchical.py)  
+│   │   │   └── [gmm.py](src/unsupervised/clustering/gmm.py)  
+│   │   └── [dimensionality_reduction/](src/unsupervised/dimensionality_reduction/)  
+│   │       ├── [pca.py](src/unsupervised/dimensionality_reduction/pca.py)  
+│   │       ├── [lda.py](src/unsupervised/dimensionality_reduction/lda.py)  
+│   │       └── [tsne.py](src/unsupervised/dimensionality_reduction/tsne.py)  
+│   ├── [ensemble/](src/ensemble/)  
+│   │   ├── [bagging.py](src/ensemble/bagging.py)  
+│   │   ├── [adaboost.py](src/ensemble/adaboost.py)  
+│   │   ├── [stacking.py](src/ensemble/stacking.py)  
+│   │   ├── [random_forest.py](src/ensemble/random_forest.py)  
+│   │   └── [gradient_boosting.py](src/ensemble/gradient_boosting.py)  
+│   └── [utils/](src/utils/)  
+│       ├── [metrics.py](src/utils/metrics.py)  
+│       ├── [preprocessing.py](src/utils/preprocessing.py)  
+│       ├── [visualization.py](src/utils/visualization.py)  
+│       └── [optimizers.py](src/utils/optimizers.py)  
+├── [tutorials/](tutorials/)  
+│   ├── [linear_regression_tutorial.ipynb](tutorials/linear_regression_tutorial.ipynb)  
+│   ├── [logistic_regression_tutorial.ipynb](tutorials/logistic_regression_tutorial.ipynb)  
+│   ├── [knn_tutorial.ipynb](tutorials/knn_tutorial.ipynb)  
+│   ├── [naive_bayes_tutorial.ipynb](tutorials/naive_bayes_tutorial.ipynb)  
+│   ├── [decision_tree_tutorial.ipynb](tutorials/decision_tree_tutorial.ipynb)  
+│   ├── [svm_tutorial.ipynb](tutorials/svm_tutorial.ipynb)  
+│   ├── [neural_networks_tutorial.ipynb](tutorials/neural_networks_tutorial.ipynb)  
+│   ├── [kmeans_tutorial.ipynb](tutorials/kmeans_tutorial.ipynb)  
+│   ├── [pca_tutorial.ipynb](tutorials/pca_tutorial.ipynb)  
+│   └── ...  
+├── [tests/](tests/)  
+│   ├── [test_linear_regression.py](tests/test_linear_regression.py)  
+│   ├── [test_logistic_regression.py](tests/test_logistic_regression.py)  
+│   ├── [test_ridge_regression.py](tests/test_ridge_regression.py)  
+│   ├── [test_polynomial_regression.py](tests/test_polynomial_regression.py)  
+│   ├── [test_knn.py](tests/test_knn.py)  
+│   ├── [test_decision_tree.py](tests/test_decision_tree.py)  
+│   ├── [test_kmeans.py](tests/test_kmeans.py)  
+│   ├── [test_pca.py](tests/test_pca.py)  
+│   └── ...  
+├── [examples/](examples/)  
+│   ├── [regression_example.py](examples/regression_example.py)  
+│   ├── [classification_example.py](examples/classification_example.py)  
+│   ├── [clustering_example.py](examples/clustering_example.py)  
+│   └── [neural_network_example.py](examples/neural_network_example.py)  
+├── [docs/](docs/)  
+│   ├── [mathematical_foundations.md](docs/mathematical_foundations.md)  
+│   ├── [algorithm_comparison.md](docs/algorithm_comparison.md)  
+│   ├── [contributing.md](docs/contributing.md)  
+│   └── [api_reference.md](docs/api_reference.md)  
+├── [requirements.txt](requirements.txt)  
+├── [LICENSE](LICENSE)  
+└── [README.md](README.md)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-```bash
 Python 3.8 or higher
-```
 
 ### Installation
 
@@ -183,7 +170,7 @@ pip install -r requirements.txt
 ### Quick Example
 
 ```python
-from algorithms.supervised.regression import LinearRegression
+from src.supervised.regression import LinearRegression
 import numpy as np
 
 # Generate sample data
